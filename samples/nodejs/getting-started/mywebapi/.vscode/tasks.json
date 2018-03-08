@@ -1,0 +1,37 @@
+{
+    "tasks": [
+        {
+            "label": "vsce: ready",
+            "command": "vsce",
+            "args": [
+                "up",
+                "--iterate",
+                "--kill",
+                "node"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "nodemon: server.js (VSCE)",
+            "command": "vsce",
+            "args": [
+                "up",
+                "--iterate",
+                "--port",
+                "50186:9229",
+                "--",
+                "node_modules/.bin/nodemon",
+                "--inspect=0.0.0.0:9229",
+                "--nolazy",
+                "server.js"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
