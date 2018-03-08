@@ -1,3 +1,6 @@
+# VS Connected Environment
+VSCE is an Azure developer service that helps teams develop with speed on Kubernetes. [Sign up for the private preview.](https://aka.ms/signup-vsce)
+
 
 # Contributing
 
