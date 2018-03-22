@@ -5,7 +5,8 @@
             "command": "vsce",
             "args": [
                 "up",
-                "--iterate"
+                "--iterate",
+                "--no-command"
             ],
             "options": {
                 "cwd": "${workspaceRoot}"

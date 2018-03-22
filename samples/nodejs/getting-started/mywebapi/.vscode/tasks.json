@@ -6,8 +6,14 @@
             "args": [
                 "up",
                 "--iterate",
-                "--kill",
-                "node"
+                "--port",
+                "57505:9229",
+                "--no-command",
+                "--config",
+                "develop",
+                "--",
+                "npm",
+                "start"
             ],
             "options": {
                 "cwd": "${workspaceRoot}"
@@ -21,7 +27,9 @@
                 "up",
                 "--iterate",
                 "--port",
-                "50186:9229",
+                "57505:9229",
+                "--config",
+                "develop.attach",
                 "--",
                 "node_modules/.bin/nodemon",
                 "--inspect=0.0.0.0:9229",
