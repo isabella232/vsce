@@ -17,8 +17,10 @@
                 "pipeArgs": [
                     "exec",
                     "-i",
+                    "--restore-command",
                     "--"
-                ]
+                ],
+                "quoteArgs": false
             }
         }
     ]

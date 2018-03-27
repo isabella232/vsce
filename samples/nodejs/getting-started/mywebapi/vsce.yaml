@@ -21,3 +21,12 @@ configurations:
       syncTarget: /app
       sync:
       - "!**/package.json"
+      iterate:
+        processesToKill: [node]
+  develop.attach:
+    build:
+      useGitIgnore: true
+    container:
+      syncTarget: /app
+      sync:
+      - "!**/package.json"
