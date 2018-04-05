@@ -18,6 +18,7 @@
                     "exec",
                     "-i",
                     "--restore-command",
+                    "--no-telemetry",
                     "--"
                 ],
                 "quoteArgs": false

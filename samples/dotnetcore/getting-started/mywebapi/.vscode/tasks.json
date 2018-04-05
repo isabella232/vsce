@@ -6,7 +6,8 @@
             "args": [
                 "up",
                 "--iterate",
-                "--no-command"
+                "--no-command",
+                "--no-telemetry"
             ],
             "options": {
                 "cwd": "${workspaceRoot}"

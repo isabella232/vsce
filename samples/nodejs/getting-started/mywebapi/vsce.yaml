@@ -1,6 +1,7 @@
 kind: helm-release
 build:
   context: .
+  dockerfile: Dockerfile
 install:
   chart: charts/mywebapi
   set:
